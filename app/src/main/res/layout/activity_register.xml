@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_of_all"
+    tools:context="com.task.sherlock.dada_park.RegisterActivity">
+
+    <TableLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+        <TableRow>
+        <EditText
+            android:id="@+id/User_Name"
+            android:textSize="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/layout_margin_leftAndLeft"
+            android:layout_marginRight="@dimen/layout_margin_leftAndLeft"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="  请输入姓名"
+            android:inputType="text"
+            android:background="@color/backgroundOfEditText"
+            android:textColorHint="@color/hintColor"
+            />
+    </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/User_Age"
+                android:textSize="22dp"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginLeft="@dimen/layout_margin_leftAndLeft"
+                android:layout_marginRight="@dimen/layout_margin_leftAndLeft"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="  请输入年龄"
+                android:background="@color/backgroundOfEditText"
+                android:inputType="textPassword"
+                android:textColorHint="@color/hintColor" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/User_Mail"
+                android:textSize="22dp"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginLeft="@dimen/layout_margin_leftAndLeft"
+                android:layout_marginRight="@dimen/layout_margin_leftAndLeft"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="  请输入邮箱"
+                android:inputType="textEmailAddress"
+                android:background="@color/backgroundOfEditText"
+                android:textColorHint="@color/hintColor"
+                />
+        </TableRow>
+        <TableRow>
+        <EditText
+            android:id="@+id/User_Password1"
+            android:textSize="22dp"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginLeft="@dimen/layout_margin_leftAndLeft"
+            android:layout_marginRight="@dimen/layout_margin_leftAndLeft"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="  请输入密码"
+            android:background="@color/backgroundOfEditText"
+            android:inputType="textPassword"
+            android:textColorHint="@color/hintColor" />
+    </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/User_Password2"
+                android:textSize="22dp"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginLeft="@dimen/layout_margin_leftAndLeft"
+                android:layout_marginRight="@dimen/layout_margin_leftAndLeft"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="  请重新输入密码"
+                android:background="@color/backgroundOfEditText"
+                android:inputType="textPassword"
+                android:textColorHint="@color/hintColor" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/login"
+                android:layout_margin="@dimen/layout_margin_top"
+                android:text="注册"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_of_all">
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:layout_gravity="top|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baoma_car_red_smll_most" />
+    <TableLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+        <TableRow>
+            <EditText
+                android:id="@+id/account"
+                android:textSize="25dp"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="  账号"
+                android:inputType="text"
+                android:background="@color/backgroundOfEditText"
+                android:textColorHint="@color/hintColor"
+                />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/password"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="  密码"
+                android:background="@color/backgroundOfEditText"
+                android:inputType="textPassword"
+                android:textColorHint="@color/hintColor" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/login"
+                android:layout_margin="10dp"
+                android:text="登录"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/forget_password"
+                android:text="忘记密码？   "
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
